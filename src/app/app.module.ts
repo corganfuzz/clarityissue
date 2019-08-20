@@ -5,20 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ClarityModule } from '@clr/angular';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HeaderComponent } from './layout/header/header.component';
+import { NavComponent } from './layout/nav/nav.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    ClarityModule,
-    BrowserAnimationsModule
-  ],
+  declarations: [AppComponent, NavComponent],
+  imports: [BrowserModule, AppRoutingModule, ClarityModule, BrowserAnimationsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
